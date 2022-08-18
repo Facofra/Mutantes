@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body><main>
+            <h1 class="mutante">¡MUTANTE!</h1>
+            <div class="botones" >
+                <div class="colores">
+                    <button class="colorRojo"  >Rojo</button>
+                    <button class="colorAzul" >Azul</button>
+                    <button class="colorVerde" >Verde</button>
+                    <button class="colorNaranja" >Naranja</button>
+    
+                </div>
+    
+                <button class="borrar" >Borrar</button>
+                <button class="reset" >Reset</button>
+    
+            </div>
+            <div id="grilla">
+            </div>
+            <div class="inputSize">
+                <label for="tamanioGrilla"> Cambiar tamaño de grilla</label>
+                <input type="number"  id="tamanioGrilla" min="4" max="16" value="4" >
+                <p>Min: 4, Max: 16</p>
+            </div>
+            <p class="encontradas">Secuencias encontradas: <span class="cantidadEncontradas"> 0 </span> </p>
+        </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
