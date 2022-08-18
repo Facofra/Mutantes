@@ -1,0 +1,124 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100vh;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: bisque;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mutante{
+    position: absolute;
+    left: 46%;
+    top: -20%;
+    margin: 0;
+    color: rgb(183, 18, 52);
+    display: none;
+}
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    width: 230px;
+    height: 100px;
+    justify-content: center;
+    margin-right: 100px;
+
+}
+
+.colorRojo{
+   color: white; 
+   background-color:rgb(183, 18, 52) ;
+   height: 20px;
+   border: none;
+   outline: 1px black solid;
+}
+.colorVerde{
+color: white;
+background-color:rgb(0, 155, 72) ;
+height: 20px;
+border: none;
+outline: 1px black solid;
+}
+.colorAzul{
+color: white;
+background-color:rgb(0, 70, 173) ;
+height: 20px;
+border: none;
+outline: 1px black solid;
+}
+.colorNaranja{
+color: white;
+background-color: rgb(230, 113, 51);
+height: 20px;
+border: none;
+outline: 1px black solid;
+}
+
+.borrar{
+    border: 1px black solid;
+    margin-right: 5px;
+    outline: 1px black solid;
+    
+}
+
+.reset{
+    border: 1px black solid;
+    margin-left: 5px;
+    outline: 1px black solid;
+}
+
+.inputSize{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    margin-left: 100px;
+}
+
+#grilla{
+    display: grid;
+    height: 360px;
+    width: 360px;
+    background-color: grey;
+    position: relative;
+}
+
+.encontradas{
+    position: absolute;
+    margin: 0;
+    bottom: -10%;
+}
+
+.cantidadEncontradas{
+  color: green
+}
+
+.celda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    outline: 1px solid black;
+}
+
+.celda span{
+    cursor: default;
+    position: absolute;
+}
